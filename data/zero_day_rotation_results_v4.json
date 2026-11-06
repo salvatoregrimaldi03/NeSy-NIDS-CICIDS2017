@@ -1,0 +1,138 @@
+{
+    "DDoS": {
+        "NN_Classical": {
+            "Accuracy": 83.48598625784199,
+            "Precision": 99.12615110406972,
+            "Recall": 62.55496973247413,
+            "F1": 76.70448287256306
+        },
+        "NeSy_LTN_v4": {
+            "Accuracy": 77.74367887890062,
+            "Precision": 81.29038721635024,
+            "Recall": 63.378246436242925,
+            "F1": 71.22542134831461
+        },
+        "Rule_Analysis": {
+            "HighFrequencyFlood (v4)": {
+                "mean_rule_activation": 0.7382647395133972,
+                "pct_samples_activated_gt_0.5": 99.9984378051162,
+                "train_mean_unscaled_primary_feature": 74632.75652871003,
+                "zd_attack_mean_unscaled_primary_feature": 102.13909482168982
+            },
+            "StrictMicroFlows (v4)": {
+                "mean_rule_activation": 0.3199208676815033,
+                "pct_samples_activated_gt_0.5": 36.3718023823472,
+                "train_mean_unscaled_primary_feature": 384.9160240566964,
+                "zd_attack_mean_unscaled_primary_feature": 1577.7939582714287
+            },
+            "AbsoluteAsymmetry (v4)": {
+                "mean_rule_activation": 4.6965367801021785e-05,
+                "pct_samples_activated_gt_0.5": 0.0,
+                "train_mean_unscaled_primary_feature": 7.975195481223051,
+                "zd_attack_mean_unscaled_primary_feature": 4.472493653583284
+            }
+        }
+    },
+    "PortScan": {
+        "NN_Classical": {
+            "Accuracy": 51.82005673941976,
+            "Precision": 73.44606946983546,
+            "Recall": 2.0238784917256494,
+            "F1": 3.9392082363034686
+        },
+        "NeSy_LTN_v4": {
+            "Accuracy": 58.87775206164495,
+            "Precision": 69.05857613068389,
+            "Recall": 28.537694264628094,
+            "F1": 40.38622631757178
+        },
+        "Rule_Analysis": {
+            "HighFrequencyFlood (v4)": {
+                "mean_rule_activation": 0.757672905921936,
+                "pct_samples_activated_gt_0.5": 100.0,
+                "train_mean_unscaled_primary_feature": 72086.56719621766,
+                "zd_attack_mean_unscaled_primary_feature": 31352.178607774153
+            },
+            "StrictMicroFlows (v4)": {
+                "mean_rule_activation": 0.9933375120162964,
+                "pct_samples_activated_gt_0.5": 99.83375733608725,
+                "train_mean_unscaled_primary_feature": 588.3589838519465,
+                "zd_attack_mean_unscaled_primary_feature": 3.8818038564424637
+            },
+            "AbsoluteAsymmetry (v4)": {
+                "mean_rule_activation": 2.1428702723369497e-07,
+                "pct_samples_activated_gt_0.5": 0.0,
+                "train_mean_unscaled_primary_feature": 8.601532110100496,
+                "zd_attack_mean_unscaled_primary_feature": 1.0175940152640992
+            }
+        }
+    },
+    "Web Attacks": {
+        "NN_Classical": {
+            "Accuracy": 97.56701813030826,
+            "Precision": 1.608848667672197,
+            "Recall": 1.4678899082568808,
+            "F1": 1.5351403214200048
+        },
+        "NeSy_LTN_v4": {
+            "Accuracy": 93.49584822460483,
+            "Precision": 0.450755014649538,
+            "Recall": 1.834862385321101,
+            "F1": 0.7237199203908087
+        },
+        "Rule_Analysis": {
+            "HighFrequencyFlood (v4)": {
+                "mean_rule_activation": 0.7405791878700256,
+                "pct_samples_activated_gt_0.5": 100.0,
+                "train_mean_unscaled_primary_feature": 66844.39201187334,
+                "zd_attack_mean_unscaled_primary_feature": 1707.9822692860648
+            },
+            "StrictMicroFlows (v4)": {
+                "mean_rule_activation": 0.8542235493659973,
+                "pct_samples_activated_gt_0.5": 95.0,
+                "train_mean_unscaled_primary_feature": 512.3176738570505,
+                "zd_attack_mean_unscaled_primary_feature": 33.88601429004588
+            },
+            "AbsoluteAsymmetry (v4)": {
+                "mean_rule_activation": 0.0001514713221695274,
+                "pct_samples_activated_gt_0.5": 0.0,
+                "train_mean_unscaled_primary_feature": 7.597590645468951,
+                "zd_attack_mean_unscaled_primary_feature": 10.945412844036698
+            }
+        }
+    },
+    "DoS": {
+        "NN_Classical": {
+            "Accuracy": 63.591350958480966,
+            "Precision": 99.9598062662031,
+            "Recall": 39.51883618104027,
+            "F1": 56.64372894963857
+        },
+        "NeSy_LTN_v4": {
+            "Accuracy": 69.16388135779623,
+            "Precision": 75.99229205488734,
+            "Recall": 71.2819249730855,
+            "F1": 73.56178114680337
+        },
+        "Rule_Analysis": {
+            "HighFrequencyFlood (v4)": {
+                "mean_rule_activation": 0.7485547661781311,
+                "pct_samples_activated_gt_0.5": 99.39616165388145,
+                "train_mean_unscaled_primary_feature": 40366.76103751006,
+                "zd_attack_mean_unscaled_primary_feature": 166751.24687055344
+            },
+            "StrictMicroFlows (v4)": {
+                "mean_rule_activation": 0.31129592657089233,
+                "pct_samples_activated_gt_0.5": 31.185072480464637,
+                "train_mean_unscaled_primary_feature": 336.91291125951454,
+                "zd_attack_mean_unscaled_primary_feature": 1173.7581831094158
+            },
+            "AbsoluteAsymmetry (v4)": {
+                "mean_rule_activation": 4.058348713442683e-05,
+                "pct_samples_activated_gt_0.5": 0.0,
+                "train_mean_unscaled_primary_feature": 8.167326927546489,
+                "zd_attack_mean_unscaled_primary_feature": 5.46468538830381
+            }
+        }
+    }
+}

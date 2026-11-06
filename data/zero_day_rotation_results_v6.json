@@ -1,0 +1,178 @@
+{
+    "DDoS": {
+        "NN_Classical": {
+            "Accuracy": 87.07495236078763,
+            "Precision": 98.47219841833362,
+            "Recall": 62.82942527299142,
+            "F1": 76.71282520790417,
+            "FPR": 0.49957168133091023,
+            "TN": 124283,
+            "FP": 624,
+            "FN": 23794,
+            "TP": 40219
+        },
+        "NeSy_LTN_v6": {
+            "Accuracy": 82.51164514080034,
+            "Precision": 80.72086011267159,
+            "Recall": 63.569899864090104,
+            "F1": 71.12606510814943,
+            "FPR": 7.7809890558575585,
+            "TN": 115188,
+            "FP": 9719,
+            "FN": 23320,
+            "TP": 40693
+        },
+        "Rule_Analysis": {
+            "HighFrequencyFlood (v6)": {
+                "mean_rule_activation": 0.7382457852363586,
+                "pct_samples_activated_gt_0.5": 99.99687563463672,
+                "train_mean_unscaled_primary_feature": 76573.8828125,
+                "zd_attack_mean_unscaled_primary_feature": 87.69276428222656
+            },
+            "StrictMicroFlows (v6)": {
+                "mean_rule_activation": 0.31967076659202576,
+                "pct_samples_activated_gt_0.5": 36.35511536719104,
+                "train_mean_unscaled_primary_feature": 402.2603454589844,
+                "zd_attack_mean_unscaled_primary_feature": 1578.1959228515625
+            },
+            "WebToolProxy (v6)": {
+                "mean_rule_activation": 2.7298844997858396e-06,
+                "pct_samples_activated_gt_0.5": 0.0,
+                "train_mean_unscaled_primary_feature": 0.3283059000968933,
+                "zd_attack_mean_unscaled_primary_feature": 0.4542827308177948
+            }
+        }
+    },
+    "PortScan": {
+        "NN_Classical": {
+            "Accuracy": 61.51613487413673,
+            "Precision": 64.38102297998518,
+            "Recall": 2.1876023273972947,
+            "F1": 4.23142509135201,
+            "FPR": 0.769372413075328,
+            "TN": 123946,
+            "FP": 961,
+            "FN": 77665,
+            "TP": 1737
+        },
+        "NeSy_LTN_v6": {
+            "Accuracy": 82.29544464512088,
+            "Precision": 84.59396306136168,
+            "Recall": 66.56759275584999,
+            "F1": 74.50593442530517,
+            "FPR": 7.706533661043817,
+            "TN": 115281,
+            "FP": 9626,
+            "FN": 26546,
+            "TP": 52856
+        },
+        "Rule_Analysis": {
+            "HighFrequencyFlood (v6)": {
+                "mean_rule_activation": 0.7577031850814819,
+                "pct_samples_activated_gt_0.5": 100.0,
+                "train_mean_unscaled_primary_feature": 73869.859375,
+                "zd_attack_mean_unscaled_primary_feature": 31379.79296875
+            },
+            "StrictMicroFlows (v6)": {
+                "mean_rule_activation": 0.993495523929596,
+                "pct_samples_activated_gt_0.5": 99.84635147729276,
+                "train_mean_unscaled_primary_feature": 623.8151245117188,
+                "zd_attack_mean_unscaled_primary_feature": 3.826852560043335
+            },
+            "WebToolProxy (v6)": {
+                "mean_rule_activation": 0.19396670162677765,
+                "pct_samples_activated_gt_0.5": 0.02770711065212463,
+                "train_mean_unscaled_primary_feature": 0.23456250131130219,
+                "zd_attack_mean_unscaled_primary_feature": 0.9996347427368164
+            }
+        }
+    },
+    "Web Attacks": {
+        "NN_Classical": {
+            "Accuracy": 98.58568061144312,
+            "Precision": 1.4044943820224718,
+            "Recall": 0.9174311926605505,
+            "F1": 1.1098779134295227,
+            "FPR": 0.5620181414972739,
+            "TN": 124205,
+            "FP": 702,
+            "FN": 1080,
+            "TP": 10
+        },
+        "NeSy_LTN_v6": {
+            "Accuracy": 96.9165932522203,
+            "Precision": 0.5309734513274336,
+            "Recall": 1.3761467889908259,
+            "F1": 0.7662835249042145,
+            "FPR": 2.2496737572754126,
+            "TN": 122097,
+            "FP": 2810,
+            "FN": 1075,
+            "TP": 15
+        },
+        "Rule_Analysis": {
+            "HighFrequencyFlood (v6)": {
+                "mean_rule_activation": 0.7404922842979431,
+                "pct_samples_activated_gt_0.5": 100.0,
+                "train_mean_unscaled_primary_feature": 67989.3828125,
+                "zd_attack_mean_unscaled_primary_feature": 1550.4913330078125
+            },
+            "StrictMicroFlows (v6)": {
+                "mean_rule_activation": 0.8607373237609863,
+                "pct_samples_activated_gt_0.5": 95.59633027522936,
+                "train_mean_unscaled_primary_feature": 537.1756591796875,
+                "zd_attack_mean_unscaled_primary_feature": 31.752649307250977
+            },
+            "WebToolProxy (v6)": {
+                "mean_rule_activation": 0.34203988313674927,
+                "pct_samples_activated_gt_0.5": 0.0,
+                "train_mean_unscaled_primary_feature": 0.3415604829788208,
+                "zd_attack_mean_unscaled_primary_feature": 0.9183486104011536
+            }
+        }
+    },
+    "DoS": {
+        "NN_Classical": {
+            "Accuracy": 69.24420482595536,
+            "Precision": 99.79565146313553,
+            "Recall": 38.801226740398214,
+            "F1": 55.87706953168801,
+            "FPR": 0.080059564315851,
+            "TN": 124807,
+            "FP": 100,
+            "FN": 77026,
+            "TP": 48836
+        },
+        "NeSy_LTN_v6": {
+            "Accuracy": 73.14739860190055,
+            "Precision": 75.13485655385672,
+            "Recall": 69.49833945114491,
+            "F1": 72.20676732072545,
+            "FPR": 23.175642678152546,
+            "TN": 95959,
+            "FP": 28948,
+            "FN": 38390,
+            "TP": 87472
+        },
+        "Rule_Analysis": {
+            "HighFrequencyFlood (v6)": {
+                "mean_rule_activation": 0.7484391331672668,
+                "pct_samples_activated_gt_0.5": 99.38980788482624,
+                "train_mean_unscaled_primary_feature": 39310.71875,
+                "zd_attack_mean_unscaled_primary_feature": 166282.5625
+            },
+            "StrictMicroFlows (v6)": {
+                "mean_rule_activation": 0.31012511253356934,
+                "pct_samples_activated_gt_0.5": 31.045112901431725,
+                "train_mean_unscaled_primary_feature": 352.1333312988281,
+                "zd_attack_mean_unscaled_primary_feature": 1175.0194091796875
+            },
+            "WebToolProxy (v6)": {
+                "mean_rule_activation": 0.013802921399474144,
+                "pct_samples_activated_gt_0.5": 0.0,
+                "train_mean_unscaled_primary_feature": 0.40715810656547546,
+                "zd_attack_mean_unscaled_primary_feature": 0.11942444741725922
+            }
+        }
+    }
+}

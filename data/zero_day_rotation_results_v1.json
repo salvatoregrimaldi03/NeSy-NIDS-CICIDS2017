@@ -1,0 +1,162 @@
+{
+    "DDoS": {
+        "NN_Classical": {
+            "Accuracy": 83.48530729746612,
+            "Precision": 98.85762119309649,
+            "Recall": 62.72681116969342,
+            "F1": 76.75273226002227
+        },
+        "NeSy_LTN": {
+            "Accuracy": 82.63423046630999,
+            "Precision": 94.75645399816017,
+            "Recall": 63.5610232376489,
+            "F1": 76.08531009527728
+        },
+        "Rule_Analysis": {
+            "Flow Packets/s": {
+                "mean_rule_activation": 0.48579439520835876,
+                "pct_samples_activated_gt_0.5": 0.0734231595391525,
+                "train_p75_unscaled": 28571.42857,
+                "train_mean_unscaled": 83105.67552688651,
+                "zd_attack_p75_unscaled": 13.02548529,
+                "zd_attack_mean_unscaled": 172.78859462402585
+            },
+            "SYN Flag Count": {
+                "mean_rule_activation": 0.5,
+                "pct_samples_activated_gt_0.5": 100.0,
+                "train_p75_unscaled": 0.0,
+                "train_mean_unscaled": 0.037670686900070076,
+                "zd_attack_p75_unscaled": 0.0,
+                "zd_attack_mean_unscaled": 0.0
+            },
+            "Packet Length Mean": {
+                "mean_rule_activation": 0.7293333411216736,
+                "pct_samples_activated_gt_0.5": 63.58055067369654,
+                "train_p75_unscaled": 199.1304348,
+                "train_mean_unscaled": 208.55012237743463,
+                "zd_attack_p75_unscaled": 1291.888889,
+                "zd_attack_mean_unscaled": 736.8931366407452
+            }
+        }
+    },
+    "PortScan": {
+        "NN_Classical": {
+            "Accuracy": 51.00246813402306,
+            "Precision": 15.995525727069351,
+            "Recall": 0.09004810961940506,
+            "F1": 0.17908802865408457
+        },
+        "NeSy_LTN": {
+            "Accuracy": 50.929008105192295,
+            "Precision": 43.86498623786759,
+            "Recall": 1.9067529785143948,
+            "F1": 3.6546434369097263
+        },
+        "Rule_Analysis": {
+            "Flow Packets/s": {
+                "mean_rule_activation": 0.5229020714759827,
+                "pct_samples_activated_gt_0.5": 98.9515377446412,
+                "train_p75_unscaled": 12861.73633,
+                "train_mean_unscaled": 76068.65343698967,
+                "zd_attack_p75_unscaled": 47619.04762,
+                "zd_attack_mean_unscaled": 62690.56565466473
+            },
+            "SYN Flag Count": {
+                "mean_rule_activation": 0.5,
+                "pct_samples_activated_gt_0.5": 100.0,
+                "train_p75_unscaled": 0.0,
+                "train_mean_unscaled": 0.03877694526365403,
+                "zd_attack_p75_unscaled": 0.0,
+                "zd_attack_mean_unscaled": 0.0
+            },
+            "Packet Length Mean": {
+                "mean_rule_activation": 0.04473499953746796,
+                "pct_samples_activated_gt_0.5": 0.05289539306314702,
+                "train_p75_unscaled": 702.8235294,
+                "train_mean_unscaled": 304.1940802197208,
+                "zd_attack_p75_unscaled": 3.333333333,
+                "zd_attack_mean_unscaled": 3.2465350523908523
+            }
+        }
+    },
+    "Web Attacks": {
+        "NN_Classical": {
+            "Accuracy": 98.20119367246907,
+            "Precision": 1.8038331454340473,
+            "Recall": 0.7339449541284404,
+            "F1": 1.0433648516465601
+        },
+        "NeSy_LTN": {
+            "Accuracy": 97.43425614765029,
+            "Precision": 0.7336084364970197,
+            "Recall": 0.7339449541284404,
+            "F1": 0.7337766567301077
+        },
+        "Rule_Analysis": {
+            "Flow Packets/s": {
+                "mean_rule_activation": 0.488905668258667,
+                "pct_samples_activated_gt_0.5": 5.871559633027523,
+                "train_p75_unscaled": 25316.4557,
+                "train_mean_unscaled": 74437.14953113637,
+                "zd_attack_p75_unscaled": 0.786516513,
+                "zd_attack_mean_unscaled": 3138.9125099951034
+            },
+            "SYN Flag Count": {
+                "mean_rule_activation": 0.5,
+                "pct_samples_activated_gt_0.5": 100.0,
+                "train_p75_unscaled": 0.0,
+                "train_mean_unscaled": 0.033735611813855655,
+                "zd_attack_p75_unscaled": 0.0,
+                "zd_attack_mean_unscaled": 0.0
+            },
+            "Packet Length Mean": {
+                "mean_rule_activation": 0.20587457716464996,
+                "pct_samples_activated_gt_0.5": 4.587155963302752,
+                "train_p75_unscaled": 341.597561,
+                "train_mean_unscaled": 265.02794195018583,
+                "zd_attack_p75_unscaled": 0.0,
+                "zd_attack_mean_unscaled": 25.56807079759633
+            }
+        }
+    },
+    "DoS": {
+        "NN_Classical": {
+            "Accuracy": 62.94535056638598,
+            "Precision": 99.53504567612961,
+            "Recall": 38.609900565303924,
+            "F1": 55.63776773421646
+        },
+        "NeSy_LTN": {
+            "Accuracy": 65.94320360727383,
+            "Precision": 92.21426419117817,
+            "Recall": 47.414022556540324,
+            "F1": 62.62698346066661
+        },
+        "Rule_Analysis": {
+            "Flow Packets/s": {
+                "mean_rule_activation": 0.5458838939666748,
+                "pct_samples_activated_gt_0.5": 18.9927022957775,
+                "train_p75_unscaled": 26666.66667,
+                "train_mean_unscaled": 49766.19101776922,
+                "zd_attack_p75_unscaled": 2016.129032,
+                "zd_attack_mean_unscaled": 167435.11417550707
+            },
+            "SYN Flag Count": {
+                "mean_rule_activation": 0.5054320693016052,
+                "pct_samples_activated_gt_0.5": 100.0,
+                "train_p75_unscaled": 0.0,
+                "train_mean_unscaled": 0.039685796783426756,
+                "zd_attack_p75_unscaled": 0.0,
+                "zd_attack_mean_unscaled": 0.010865117609435768
+            },
+            "Packet Length Mean": {
+                "mean_rule_activation": 0.758512556552887,
+                "pct_samples_activated_gt_0.5": 65.83268116143539,
+                "train_p75_unscaled": 110.0,
+                "train_mean_unscaled": 184.67963210612774,
+                "zd_attack_p75_unscaled": 860.7857143,
+                "zd_attack_mean_unscaled": 567.8406185078109
+            }
+        }
+    }
+}

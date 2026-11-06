@@ -1,0 +1,138 @@
+{
+    "DDoS": {
+        "NN_Classical": {
+            "Accuracy": 82.17762961353576,
+            "Precision": 98.4215520336462,
+            "Recall": 59.95469634836946,
+            "F1": 74.51665671583832
+        },
+        "NeSy_LTN_v2": {
+            "Accuracy": 77.53150376144048,
+            "Precision": 80.09011463827635,
+            "Recall": 64.28353837141184,
+            "F1": 71.32154448117929
+        },
+        "Rule_Analysis": {
+            "FlowAsymmetry (v2)": {
+                "mean_rule_activation": 0.016741549596190453,
+                "pct_samples_activated_gt_0.5": 1.1591486037883225,
+                "train_mean_unscaled": 74632.75652871003,
+                "zd_attack_mean_unscaled": 102.13909482168982
+            },
+            "LowPacketLengthStd (v2)": {
+                "mean_rule_activation": 0.42354628443717957,
+                "pct_samples_activated_gt_0.5": 36.435852372583476,
+                "train_mean_unscaled": 384.9160240566964,
+                "zd_attack_mean_unscaled": 1577.7939582714287
+            },
+            "TCPFlagAnomaly (v2)": {
+                "mean_rule_activation": 0.11920294165611267,
+                "pct_samples_activated_gt_0.5": 0.0,
+                "train_mean_unscaled": 0.037670686900070076,
+                "zd_attack_mean_unscaled": 0.0
+            }
+        }
+    },
+    "PortScan": {
+        "NN_Classical": {
+            "Accuracy": 51.8234377449308,
+            "Precision": 78.51810893005253,
+            "Recall": 1.78836805118259,
+            "F1": 3.4970847365796294
+        },
+        "NeSy_LTN_v2": {
+            "Accuracy": 45.00241280847833,
+            "Precision": 2.456422126694695,
+            "Recall": 0.3274476713432911,
+            "F1": 0.5778644574463947
+        },
+        "Rule_Analysis": {
+            "FlowAsymmetry (v2)": {
+                "mean_rule_activation": 0.001833868445828557,
+                "pct_samples_activated_gt_0.5": 0.03589330243570691,
+                "train_mean_unscaled": 72086.56719621766,
+                "zd_attack_mean_unscaled": 31352.178607774153
+            },
+            "LowPacketLengthStd (v2)": {
+                "mean_rule_activation": 0.9964797496795654,
+                "pct_samples_activated_gt_0.5": 99.94584519281631,
+                "train_mean_unscaled": 588.3589838519465,
+                "zd_attack_mean_unscaled": 3.8818038564424637
+            },
+            "TCPFlagAnomaly (v2)": {
+                "mean_rule_activation": 0.11920290440320969,
+                "pct_samples_activated_gt_0.5": 0.0,
+                "train_mean_unscaled": 0.03877694526365403,
+                "zd_attack_mean_unscaled": 0.0
+            }
+        }
+    },
+    "Web Attacks": {
+        "NN_Classical": {
+            "Accuracy": 98.23853298009163,
+            "Precision": 1.2315270935960592,
+            "Recall": 0.45871559633027525,
+            "F1": 0.6684491978609626
+        },
+        "NeSy_LTN_v2": {
+            "Accuracy": 95.59751782507423,
+            "Precision": 0.5651846269781462,
+            "Recall": 1.3761467889908259,
+            "F1": 0.8012820512820512
+        },
+        "Rule_Analysis": {
+            "FlowAsymmetry (v2)": {
+                "mean_rule_activation": 0.014594516716897488,
+                "pct_samples_activated_gt_0.5": 0.7798165137614679,
+                "train_mean_unscaled": 66844.39201187334,
+                "zd_attack_mean_unscaled": 1707.9822692860648
+            },
+            "LowPacketLengthStd (v2)": {
+                "mean_rule_activation": 0.9726506471633911,
+                "pct_samples_activated_gt_0.5": 98.53211009174312,
+                "train_mean_unscaled": 512.3176738570505,
+                "zd_attack_mean_unscaled": 33.88601429004588
+            },
+            "TCPFlagAnomaly (v2)": {
+                "mean_rule_activation": 0.11920291930437088,
+                "pct_samples_activated_gt_0.5": 0.0,
+                "train_mean_unscaled": 0.033735611813855655,
+                "zd_attack_mean_unscaled": 0.0
+            }
+        }
+    },
+    "DoS": {
+        "NN_Classical": {
+            "Accuracy": 62.77942744569246,
+            "Precision": 99.68854765945117,
+            "Recall": 38.27341959217076,
+            "F1": 55.3112091558615
+        },
+        "NeSy_LTN_v2": {
+            "Accuracy": 74.61830509771293,
+            "Precision": 89.02203635193824,
+            "Recall": 65.95940776170633,
+            "F1": 75.77475908934288
+        },
+        "Rule_Analysis": {
+            "FlowAsymmetry (v2)": {
+                "mean_rule_activation": 0.2653978168964386,
+                "pct_samples_activated_gt_0.5": 26.130707166210478,
+                "train_mean_unscaled": 40366.76103751006,
+                "zd_attack_mean_unscaled": 166751.24687055344
+            },
+            "LowPacketLengthStd (v2)": {
+                "mean_rule_activation": 0.45552149415016174,
+                "pct_samples_activated_gt_0.5": 35.360694096288384,
+                "train_mean_unscaled": 336.91291125951454,
+                "zd_attack_mean_unscaled": 1173.7581831094158
+            },
+            "TCPFlagAnomaly (v2)": {
+                "mean_rule_activation": 0.11920293420553207,
+                "pct_samples_activated_gt_0.5": 0.0,
+                "train_mean_unscaled": 0.039685796783426756,
+                "zd_attack_mean_unscaled": 0.010865117609435768
+            }
+        }
+    }
+}

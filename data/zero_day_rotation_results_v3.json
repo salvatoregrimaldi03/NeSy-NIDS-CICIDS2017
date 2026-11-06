@@ -1,0 +1,138 @@
+{
+    "DDoS": {
+        "NN_Classical": {
+            "Accuracy": 83.53521088509275,
+            "Precision": 99.0719372076664,
+            "Recall": 62.70415934387815,
+            "F1": 76.80025256632258
+        },
+        "NeSy_LTN_v3": {
+            "Accuracy": 81.72442356264088,
+            "Precision": 98.12784617979423,
+            "Recall": 59.077523921109155,
+            "F1": 73.75257189105908
+        },
+        "Rule_Analysis": {
+            "HighSpeedAsymmetry (v3)": {
+                "mean_rule_activation": 3.369927071616985e-05,
+                "pct_samples_activated_gt_0.5": 0.0,
+                "train_mean_unscaled_primary_feature": 7.975195481223051,
+                "zd_attack_mean_unscaled_primary_feature": 4.472493653583284
+            },
+            "RepetitiveMicroFlows (v3)": {
+                "mean_rule_activation": 0.528347373008728,
+                "pct_samples_activated_gt_0.5": 38.39093926967389,
+                "train_mean_unscaled_primary_feature": 384.9160240566964,
+                "zd_attack_mean_unscaled_primary_feature": 1577.7939582714287
+            },
+            "IncompleteHandshake (v3)": {
+                "mean_rule_activation": 0.0,
+                "pct_samples_activated_gt_0.5": 0.0,
+                "train_mean_unscaled_primary_feature": 0.037670686900070076,
+                "zd_attack_mean_unscaled_primary_feature": 0.0
+            }
+        }
+    },
+    "PortScan": {
+        "NN_Classical": {
+            "Accuracy": 51.56002667920713,
+            "Precision": 72.94520547945206,
+            "Recall": 1.2071484345482482,
+            "F1": 2.3749938054413002
+        },
+        "NeSy_LTN_v3": {
+            "Accuracy": 50.399727060646015,
+            "Precision": 5.259491466388018,
+            "Recall": 0.09508576610160953,
+            "F1": 0.18679449512911706
+        },
+        "Rule_Analysis": {
+            "HighSpeedAsymmetry (v3)": {
+                "mean_rule_activation": 1.7282100372995046e-07,
+                "pct_samples_activated_gt_0.5": 0.0,
+                "train_mean_unscaled_primary_feature": 8.601532110100496,
+                "zd_attack_mean_unscaled_primary_feature": 1.0175940152640992
+            },
+            "RepetitiveMicroFlows (v3)": {
+                "mean_rule_activation": 0.9993732571601868,
+                "pct_samples_activated_gt_0.5": 99.93954812221355,
+                "train_mean_unscaled_primary_feature": 588.3589838519465,
+                "zd_attack_mean_unscaled_primary_feature": 3.8818038564424637
+            },
+            "IncompleteHandshake (v3)": {
+                "mean_rule_activation": 0.0,
+                "pct_samples_activated_gt_0.5": 0.0,
+                "train_mean_unscaled_primary_feature": 0.03877694526365403,
+                "zd_attack_mean_unscaled_primary_feature": 0.0
+            }
+        }
+    },
+    "Web Attacks": {
+        "NN_Classical": {
+            "Accuracy": 98.1407395553659,
+            "Precision": 2.7640671273445214,
+            "Recall": 1.2844036697247707,
+            "F1": 1.7538365173817727
+        },
+        "NeSy_LTN_v3": {
+            "Accuracy": 97.60317206308565,
+            "Precision": 1.9091847265221877,
+            "Recall": 1.6972477064220184,
+            "F1": 1.7969888295288974
+        },
+        "Rule_Analysis": {
+            "HighSpeedAsymmetry (v3)": {
+                "mean_rule_activation": 9.869567293208092e-05,
+                "pct_samples_activated_gt_0.5": 0.0,
+                "train_mean_unscaled_primary_feature": 7.597590645468951,
+                "zd_attack_mean_unscaled_primary_feature": 10.945412844036698
+            },
+            "RepetitiveMicroFlows (v3)": {
+                "mean_rule_activation": 0.989443838596344,
+                "pct_samples_activated_gt_0.5": 99.26605504587155,
+                "train_mean_unscaled_primary_feature": 512.3176738570505,
+                "zd_attack_mean_unscaled_primary_feature": 33.88601429004588
+            },
+            "IncompleteHandshake (v3)": {
+                "mean_rule_activation": 0.0,
+                "pct_samples_activated_gt_0.5": 0.0,
+                "train_mean_unscaled_primary_feature": 0.033735611813855655,
+                "zd_attack_mean_unscaled_primary_feature": 0.0
+            }
+        }
+    },
+    "DoS": {
+        "NN_Classical": {
+            "Accuracy": 63.946388183596085,
+            "Precision": 99.93666564408072,
+            "Recall": 40.118304644390854,
+            "F1": 57.25308554485308
+        },
+        "NeSy_LTN_v3": {
+            "Accuracy": 64.34828554078027,
+            "Precision": 98.57867924170975,
+            "Recall": 41.35696777807352,
+            "F1": 58.26843049402651
+        },
+        "Rule_Analysis": {
+            "HighSpeedAsymmetry (v3)": {
+                "mean_rule_activation": 4.212266139802523e-05,
+                "pct_samples_activated_gt_0.5": 0.0,
+                "train_mean_unscaled_primary_feature": 8.167326927546489,
+                "zd_attack_mean_unscaled_primary_feature": 5.46468538830381
+            },
+            "RepetitiveMicroFlows (v3)": {
+                "mean_rule_activation": 0.44633325934410095,
+                "pct_samples_activated_gt_0.5": 35.9959161459223,
+                "train_mean_unscaled_primary_feature": 336.91291125951454,
+                "zd_attack_mean_unscaled_primary_feature": 1173.7581831094158
+            },
+            "IncompleteHandshake (v3)": {
+                "mean_rule_activation": 0.0,
+                "pct_samples_activated_gt_0.5": 0.0,
+                "train_mean_unscaled_primary_feature": 0.039685796783426756,
+                "zd_attack_mean_unscaled_primary_feature": 0.010865117609435768
+            }
+        }
+    }
+}
