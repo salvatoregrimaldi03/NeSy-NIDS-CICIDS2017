@@ -1,0 +1,154 @@
+{
+    "DDoS": {
+        "Baseline_000": {
+            "FP_count": 788,
+            "FN_count": 23332,
+            "FP_mean_features": {
+                "Fwd Packets/s": 20499.66796875,
+                "Flow IAT Mean": 1050221.625,
+                "Packet Length Std": 29.903919219970703,
+                "Average Packet Size": 17.251113891601562,
+                "Flow Duration": 4784767.0
+            },
+            "FN_mean_features": {
+                "Fwd Packets/s": 208.1708221435547,
+                "Flow IAT Mean": 1792457.125,
+                "Packet Length Std": 2.298804759979248,
+                "Average Packet Size": 9.210088729858398,
+                "Flow Duration": 6178540.5
+            }
+        },
+        "NeSy_110": {
+            "FP_count": 7282,
+            "FN_count": 23970,
+            "FP_mean_features": {
+                "Fwd Packets/s": 665550.25,
+                "Flow IAT Mean": 232837.625,
+                "Packet Length Std": 7.544221878051758,
+                "Average Packet Size": 15.388359069824219,
+                "Flow Duration": 807148.6875
+            },
+            "FN_mean_features": {
+                "Fwd Packets/s": 162.33477783203125,
+                "Flow IAT Mean": 1760766.625,
+                "Packet Length Std": 42.045467376708984,
+                "Average Packet Size": 40.49992752075195,
+                "Flow Duration": 6087425.0
+            }
+        }
+    },
+    "PortScan": {
+        "Baseline_000": {
+            "FP_count": 1013,
+            "FN_count": 79336,
+            "FP_mean_features": {
+                "Fwd Packets/s": 8957.7001953125,
+                "Flow IAT Mean": 1338337.375,
+                "Packet Length Std": 23.613710403442383,
+                "Average Packet Size": 15.101417541503906,
+                "Flow Duration": 5152981.5
+            },
+            "FN_mean_features": {
+                "Fwd Packets/s": 31405.0234375,
+                "Flow IAT Mean": 22547.8515625,
+                "Packet Length Std": 2.9044084548950195,
+                "Average Packet Size": 3.984389543533325,
+                "Flow Duration": 71272.859375
+            }
+        },
+        "NeSy_110": {
+            "FP_count": 7981,
+            "FN_count": 58034,
+            "FP_mean_features": {
+                "Fwd Packets/s": 620656.6875,
+                "Flow IAT Mean": 280498.40625,
+                "Packet Length Std": 10.14085578918457,
+                "Average Packet Size": 17.055707931518555,
+                "Flow Duration": 811839.4375
+            },
+            "FN_mean_features": {
+                "Fwd Packets/s": 25426.23828125,
+                "Flow IAT Mean": 30089.23046875,
+                "Packet Length Std": 2.7294442653656006,
+                "Average Packet Size": 4.3055806159973145,
+                "Flow Duration": 95258.265625
+            }
+        }
+    },
+    "Web Attacks": {
+        "Baseline_000": {
+            "FP_count": 631,
+            "FN_count": 1082,
+            "FP_mean_features": {
+                "Fwd Packets/s": 26502.978515625,
+                "Flow IAT Mean": 887557.0625,
+                "Packet Length Std": 29.44731903076172,
+                "Average Packet Size": 15.061508178710938,
+                "Flow Duration": 4745512.0
+            },
+            "FN_mean_features": {
+                "Fwd Packets/s": 1561.9346923828125,
+                "Flow IAT Mean": 1591224.75,
+                "Packet Length Std": 27.250816345214844,
+                "Average Packet Size": 21.520570755004883,
+                "Flow Duration": 6334589.0
+            }
+        },
+        "NeSy_110": {
+            "FP_count": 2355,
+            "FN_count": 1075,
+            "FP_mean_features": {
+                "Fwd Packets/s": 940182.4375,
+                "Flow IAT Mean": 343682.5625,
+                "Packet Length Std": 28.260662078857422,
+                "Average Packet Size": 27.139142990112305,
+                "Flow Duration": 1507612.625
+            },
+            "FN_mean_features": {
+                "Fwd Packets/s": 1535.017822265625,
+                "Flow IAT Mean": 1601583.75,
+                "Packet Length Std": 27.42826271057129,
+                "Average Packet Size": 21.66070556640625,
+                "Flow Duration": 6375835.0
+            }
+        }
+    },
+    "DoS": {
+        "Baseline_000": {
+            "FP_count": 461,
+            "FN_count": 79819,
+            "FP_mean_features": {
+                "Fwd Packets/s": 2277.931884765625,
+                "Flow IAT Mean": 1531092.375,
+                "Packet Length Std": 0.7279868125915527,
+                "Average Packet Size": 0.9535171985626221,
+                "Flow Duration": 4612182.0
+            },
+            "FN_mean_features": {
+                "Fwd Packets/s": 262199.125,
+                "Flow IAT Mean": 4277684.0,
+                "Packet Length Std": 798.6266479492188,
+                "Average Packet Size": 446.97705078125,
+                "Flow Duration": 36092232.0
+            }
+        },
+        "NeSy_110": {
+            "FP_count": 40044,
+            "FN_count": 36056,
+            "FP_mean_features": {
+                "Fwd Packets/s": 144948.59375,
+                "Flow IAT Mean": 58016.4140625,
+                "Packet Length Std": 4.600968360900879,
+                "Average Packet Size": 18.36100959777832,
+                "Flow Duration": 165073.46875
+            },
+            "FN_mean_features": {
+                "Fwd Packets/s": 827.723876953125,
+                "Flow IAT Mean": 9269286.0,
+                "Packet Length Std": 1456.6527099609375,
+                "Average Packet Size": 806.471923828125,
+                "Flow Duration": 77884128.0
+            }
+        }
+    }
+}

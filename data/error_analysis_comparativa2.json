@@ -1,0 +1,186 @@
+{
+    "DDoS": {
+        "Baseline_000": {
+            "FP_count": 686,
+            "FN_count": 25395,
+            "FP_mean_features": {
+                "Fwd Packets/s": 22237.51953125,
+                "Flow IAT Mean": 986651.25,
+                "Packet Length Std": 15.079699516296387,
+                "Average Packet Size": 9.873506546020508,
+                "Flow Duration": 4555492.5,
+                "PSH Flag Count": 0.262390673160553,
+                "Init_Win_bytes_forward": 8049.76513671875
+            },
+            "FN_mean_features": {
+                "Fwd Packets/s": 194.6117401123047,
+                "Flow IAT Mean": 1662553.125,
+                "Packet Length Std": 129.99099731445312,
+                "Average Packet Size": 109.07117462158203,
+                "Flow Duration": 5750432.5,
+                "PSH Flag Count": 0.08174837380647659,
+                "Init_Win_bytes_forward": 904.62060546875
+            }
+        },
+        "NeSy_111": {
+            "FP_count": 9287,
+            "FN_count": 23360,
+            "FP_mean_features": {
+                "Fwd Packets/s": 537039.125,
+                "Flow IAT Mean": 217307.125,
+                "Packet Length Std": 16.1392765045166,
+                "Average Packet Size": 18.58534812927246,
+                "Flow Duration": 781419.8125,
+                "PSH Flag Count": 0.16130074858665466,
+                "Init_Win_bytes_forward": 8112.33056640625
+            },
+            "FN_mean_features": {
+                "Fwd Packets/s": 173.516357421875,
+                "Flow IAT Mean": 1805922.875,
+                "Packet Length Std": 4.530921459197998,
+                "Average Packet Size": 10.947112083435059,
+                "Flow Duration": 6239925.0,
+                "PSH Flag Count": 0.0026969178579747677,
+                "Init_Win_bytes_forward": 277.3999938964844
+            }
+        }
+    },
+    "PortScan": {
+        "Baseline_000": {
+            "FP_count": 991,
+            "FN_count": 79335,
+            "FP_mean_features": {
+                "Fwd Packets/s": 9153.947265625,
+                "Flow IAT Mean": 1209136.125,
+                "Packet Length Std": 18.804180145263672,
+                "Average Packet Size": 9.875818252563477,
+                "Flow Duration": 3554589.25,
+                "PSH Flag Count": 0.42986881732940674,
+                "Init_Win_bytes_forward": 12694.095703125
+            },
+            "FN_mean_features": {
+                "Fwd Packets/s": 31405.419921875,
+                "Flow IAT Mean": 22527.119140625,
+                "Packet Length Std": 2.904445171356201,
+                "Average Packet Size": 3.9844398498535156,
+                "Flow Duration": 71210.71875,
+                "PSH Flag Count": 0.9999369978904724,
+                "Init_Win_bytes_forward": 15316.10546875
+            }
+        },
+        "NeSy_111": {
+            "FP_count": 9659,
+            "FN_count": 65393,
+            "FP_mean_features": {
+                "Fwd Packets/s": 525280.625,
+                "Flow IAT Mean": 189409.46875,
+                "Packet Length Std": 22.193195343017578,
+                "Average Packet Size": 22.941068649291992,
+                "Flow Duration": 770053.75,
+                "PSH Flag Count": 0.12951651215553284,
+                "Init_Win_bytes_forward": 7607.68115234375
+            },
+            "FN_mean_features": {
+                "Fwd Packets/s": 26596.076171875,
+                "Flow IAT Mean": 27319.015625,
+                "Packet Length Std": 2.7976303100585938,
+                "Average Packet Size": 4.193020343780518,
+                "Flow Duration": 86377.296875,
+                "PSH Flag Count": 0.999954104423523,
+                "Init_Win_bytes_forward": 12478.8896484375
+            }
+        }
+    },
+    "Web Attacks": {
+        "Baseline_000": {
+            "FP_count": 770,
+            "FN_count": 1075,
+            "FP_mean_features": {
+                "Fwd Packets/s": 31854.31640625,
+                "Flow IAT Mean": 896841.5,
+                "Packet Length Std": 49.82159423828125,
+                "Average Packet Size": 27.9127140045166,
+                "Flow Duration": 4263107.0,
+                "PSH Flag Count": 0.2129870057106018,
+                "Init_Win_bytes_forward": 6523.279296875
+            },
+            "FN_mean_features": {
+                "Fwd Packets/s": 1535.0179443359375,
+                "Flow IAT Mean": 1600939.375,
+                "Packet Length Std": 28.731672286987305,
+                "Average Packet Size": 22.362682342529297,
+                "Flow Duration": 6380308.0,
+                "PSH Flag Count": 0.9237209558486938,
+                "Init_Win_bytes_forward": 27029.26171875
+            }
+        },
+        "NeSy_111": {
+            "FP_count": 2114,
+            "FN_count": 1078,
+            "FP_mean_features": {
+                "Fwd Packets/s": 881136.1875,
+                "Flow IAT Mean": 386822.3125,
+                "Packet Length Std": 44.518028259277344,
+                "Average Packet Size": 33.30106735229492,
+                "Flow Duration": 1792222.125,
+                "PSH Flag Count": 0.21948912739753723,
+                "Init_Win_bytes_forward": 13621.7294921875
+            },
+            "FN_mean_features": {
+                "Fwd Packets/s": 1564.0758056640625,
+                "Flow IAT Mean": 1594495.5,
+                "Packet Length Std": 26.865570068359375,
+                "Average Packet Size": 21.440753936767578,
+                "Flow Duration": 6348618.0,
+                "PSH Flag Count": 0.918367326259613,
+                "Init_Win_bytes_forward": 26880.7890625
+            }
+        }
+    },
+    "DoS": {
+        "Baseline_000": {
+            "FP_count": 109,
+            "FN_count": 81178,
+            "FP_mean_features": {
+                "Fwd Packets/s": 14212.091796875,
+                "Flow IAT Mean": 974191.625,
+                "Packet Length Std": 5.168245315551758,
+                "Average Packet Size": 20.044036865234375,
+                "Flow Duration": 2661970.0,
+                "PSH Flag Count": 0.5504587292671204,
+                "Init_Win_bytes_forward": 16417.23828125
+            },
+            "FN_mean_features": {
+                "Fwd Packets/s": 257809.390625,
+                "Flow IAT Mean": 4348833.5,
+                "Packet Length Std": 807.1958618164062,
+                "Average Packet Size": 451.0867614746094,
+                "Flow Duration": 37293124.0,
+                "PSH Flag Count": 0.16700337827205658,
+                "Init_Win_bytes_forward": 5000.7158203125
+            }
+        },
+        "NeSy_111": {
+            "FP_count": 33794,
+            "FN_count": 36442,
+            "FP_mean_features": {
+                "Fwd Packets/s": 169063.71875,
+                "Flow IAT Mean": 107632.0703125,
+                "Packet Length Std": 8.691230773925781,
+                "Average Packet Size": 13.452127456665039,
+                "Flow Duration": 393726.9375,
+                "PSH Flag Count": 0.08190803229808807,
+                "Init_Win_bytes_forward": 6308.00830078125
+            },
+            "FN_mean_features": {
+                "Fwd Packets/s": 819.00244140625,
+                "Flow IAT Mean": 9047457.0,
+                "Packet Length Std": 1484.816650390625,
+                "Average Packet Size": 818.772705078125,
+                "Flow Duration": 76770128.0,
+                "PSH Flag Count": 0.23278085887432098,
+                "Init_Win_bytes_forward": 6817.8984375
+            }
+        }
+    }
+}
