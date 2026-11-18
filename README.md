@@ -9,22 +9,19 @@
 ## Italiano
 
 ### 📌 Che cos'è?
-**NeSy-NIDS-CICIDS2017** è una repository Proof of Concept (PoC) che implementa un **Sistema Neuro-Simbolico per la Rilevazione delle Intrusioni di Rete (NeSy-NIDS)** valutato sul dataset benchmark **CICIDS2017**. Il framework combina architetture di reti neurali con il ragionamento simbolico per migliorare l'accuratezza nella rilevazione delle intrusioni, l'interpretabilità e la robustezza contro vettori di attacco zero-day.
+**NeSy-NIDS-CICIDS2017** è una repository Proof of Concept (PoC) che implementa un **Sistema Neuro-Simbolico per la Rilevazione delle Intrusioni di Rete (NeSy-NIDS)** valutato sul dataset benchmark **CICIDS2017**. Il framework combina architetture di reti neurali con il ragionamento simbolico (*Logic Tensor Networks*) per migliorare l'accuratezza nella rilevazione delle intrusioni, l'interpretabilità e la robustezza contro vettori di attacco zero-day.
+
+#### Metodologia di Validazione (Leave-One-Out Zero-Day)
+Per simulare scenari di attacco inediti, la valutazione adotta un protocollo **Leave-One-Out** sulle 4 famiglie di attacco principali del dataset (`DDoS`, `PortScan`, `Web Attacks`, `DoS`): in ogni esperimento il modello viene addestrato sul traffico benigno e su 3 famiglie di attacco note, per poi essere testato sulla 4ª famiglia completamente esclusa dalla fase di training.
 
 Attualmente, la repository include:
-- Script di preprocessing per l'estrazione delle feature e l'ispezione del traffico (`src/preprocess.py`, `src/inspect_web_attacks.py`).
-- Pipeline principali di esecuzione e valutazione (`src/main.py`, `src/main_2.py`).
+- Script di preprocessing per la pulizia dei dati, la creazione degli split *leave-one-out* e l'ispezione del traffico (`src/preprocess.py`, `src/inspect_web_attacks.py`).
+- Pipeline principali di esecuzione e valutazione per i set di regole `v5` e `v6` (`src/main.py`, `src/main_2.py`).
 - Pipeline per studi di ablazione (`src/ablation_study.py`, `src/ablation_study_2.py`).
-- Script per l'analisi comparativa degli errori (`src/error_analysis.py`, `src/error_analysis_2.py`).
+- Script per l'analisi comparativa degli errori FP/FN (`src/error_analysis.py`, `src/error_analysis_2.py`).
 - Benchmarking per la valutazione su rotazione zero-day (configurazioni `v1`-`v4`, `v6`, `v5123`).
-- Strumenti di visualizzazione dei risultati (`src/genera_grafici.py`, `src/genera_grafici_tesi.py`).
+- Strumenti di visualizzazione dei risultati e generazione delle figure (`src/genera_grafici.py`, `src/genera_grafici_2.py`, `src/genera_grafici_tesi.py`).
 - Gestione dello storage dei dataset ottimizzata tramite **Git LFS** per i file `.csv` di grandi dimensioni.
-
-Le funzionalità principali includono:
-- Organizzazione del progetto separata tra moduli Python in `src/` e stoccaggio di dataset CSV e log dei risultati in `data/`.
-- Log completi dei risultati degli studi di ablazione (versioni `v5`, `v6`).
-- Analisi comparativa degli errori per la validazione delle regole neuro-simboliche.
-- Tracciamento trasparente dei dataset CSV di grandi dimensioni gestito via Git LFS.
 
 ### 🚀 Come provarlo
 Il progetto può essere eseguito localmente in un ambiente Python.
@@ -50,9 +47,17 @@ Il progetto può essere eseguito localmente in un ambiente Python.
    # Su Linux/macOS:
    source .venv/bin/activate
    ```
-5. Esegui la pipeline principale di rilevazione delle intrusioni:
+5. Installa le dipendenze necessarie:
    ```bash
+   pip install torch scikit-learn pandas numpy matplotlib
+   pip install https://github.com/logictensornetworks/LTNtorch/archive/refs/heads/main.zip
+   ```
+6. Esegui la pipeline principale di rilevazione delle intrusioni:
+   ```bash
+   # Esecuzione con set di regole v5:
    python src/main.py
+   # Oppure con set di regole v6:
+   python src/main_2.py
    ```
 
 ### 🧱 Sviluppato con
@@ -73,22 +78,20 @@ Il progetto può essere eseguito localmente in un ambiente Python.
 
 ### 📌 What is it?
 
-**NeSy-NIDS-CICIDS2017** is a Proof of Concept (PoC) repository that implements a **Neuro-Symbolic Network Intrusion Detection System (NeSy-NIDS)** evaluated on the **CICIDS2017** benchmark dataset. The framework combines neural network architectures with symbolic reasoning to improve intrusion detection accuracy, interpretability, and robustness against zero-day attack vectors.
+**NeSy-NIDS-CICIDS2017** is a Proof of Concept (PoC) repository that implements a **Neuro-Symbolic Network Intrusion Detection System (NeSy-NIDS)** evaluated on the **CICIDS2017** benchmark dataset. The framework combines neural network architectures with symbolic reasoning (Logic Tensor Networks) to improve intrusion detection accuracy, interpretability, and robustness against zero-day attack vectors.
+
+#### Validation Methodology (Leave-One-Out Zero-Day)
+To simulate unseen attack scenarios, the evaluation follows a Leave-One-Out protocol across the 4 main attack families in the dataset (`DDoS`, `PortScan`, `Web Attacks`, `DoS`): in each run, the model is trained on benign traffic and 3 known attack families, and then evaluated on the 4th attack family completely held out during training.
 
 The repository currently includes:
-- Preprocessing scripts for feature extraction and traffic inspection (`src/preprocess.py`, `src/inspect_web_attacks.py`).
-- Main execution and evaluation pipelines (`src/main.py`, `src/main_2.py`).
-- Pipelines for ablation studies (`src/ablation_study.py`, `src/ablation_study_2.py`).
-- Scripts for comparative error analysis (`src/error_analysis.py`, `src/error_analysis_2.py`).
-- Benchmarking tools for evaluation under zero-day rotation (configurations `v1`–`v4`, `v6`, `v5123`).
-- Tools for visualizing experimental results (`src/genera_grafici.py`, `src/genera_grafici_tesi.py`).
-- Optimized dataset storage management through **Git LFS** for large `.csv` files.
 
-The main features include:
-- Project organization with a separation between Python modules in `src/` and CSV dataset storage and result logs in `data/`.
-- Complete logs of the results obtained from ablation studies (versions `v5`, `v6`).
-- Comparative error analysis for validating neuro-symbolic rules.
-- Transparent tracking of large CSV datasets managed through Git LFS.
+- Preprocessing scripts for data cleaning, leave-one-out split creation, and traffic inspection (`src/preprocess.py`, `src/inspect_web_attacks.py`).
+- Main execution and evaluation pipelines for rule sets `v5` and `v6` (`src/main.py`, `src/main_2.py`).
+- Pipelines for ablation studies (`src/ablation_study.py`, `src/ablation_study_2.py`).
+- Scripts for comparative FP/FN error analysis (`src/error_analysis.py`, `src/error_analysis_2.py`).
+- Benchmarking tools for evaluation under zero-day rotation (configurations `v1`–`v4`, `v6`, `v5123`).
+- Tools for visualizing experimental results and generating thesis figures (`src/genera_grafici.py`, `src/genera_grafici_2.py`, `src/genera_grafici_tesi.py`).
+- Optimized dataset storage management through **Git LFS** for large `.csv` files.
 
 ### 🚀 How to try it
 
@@ -120,9 +123,18 @@ The project can be run locally in a Python environment.
    source .venv/bin/activate
    ```
 
-5. Run the main intrusion detection pipeline:
+5. Install the required dependencies:
    ```bash
+   pip install torch scikit-learn pandas numpy matplotlib
+   pip install https://github.com/logictensornetworks/LTNtorch/archive/refs/heads/main.zip
+   ```
+
+6. Run the main intrusion detection pipeline:
+   ```bash
+   # Run with v5 rule set:
    python src/main.py
+   # Or run with v6 rule set:
+   python src/main_2.py
    ```
 
 ### 🧱 Built with
