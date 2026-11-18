@@ -23,6 +23,26 @@ Attualmente, la repository include:
 - Strumenti di visualizzazione dei risultati e generazione delle figure (`src/genera_grafici.py`, `src/genera_grafici_2.py`, `src/genera_grafici_tesi.py`).
 - Gestione dello storage dei dataset ottimizzata tramite **Git LFS** per i file `.csv` di grandi dimensioni.
 
+## Risultati Principali (Confronto v5 vs v6)
+
+La tabella riporta le **macro-medie globali** calcolate sui quattro scenari *zero-day* del protocollo *Leave-One-Attack-Out* (LOAO) sotto ciclo di valutazione unificato. La tripla `(R1, R2, R3)` indica i vincoli logici attivi durante l'addestramento:
+- **R1 (`HighFrequencyFlood`):** rileva traffico ad elevata frequenza di pacchetti.
+- **R2 (`StrictMicroFlows`):** identifica flussi brevi con pochi pacchetti.
+- **R3:** euristica di sessione (`AsymmetricFlowRatio` nella **v5**, sostituita da `WebToolProxy` nella **v6**).
+
+| Configurazione | Recall medio (%) ↑ | F1-Score medio (%) ↑ | FPR medio (%) ↓ |
+| :--- | :---: | :---: | :---: |
+| `v5 (1,1,0)` | 41,11 | 46,97 | 9,61 |
+| `v5 (1,1,1)` — *AsymmetricFlowRatio* | 41,21 | 45,08 | 14,80 |
+| `v6 (1,1,0)` | 39,14 | 44,24 | 10,45 |
+| **`v6 (1,1,1)` — *WebToolProxy*** | **46,04** | **50,74** | **11,96** |
+
+### Grafici Vettoriali (PDF)
+- [Studio di ablazione v6: trade-off FPR/Recall ed effetto di R3]( `data/tradeoff_fpr_recall2.pdf `)
+- [Recall zero-day per categoria: Baseline vs NeSy v6 (1,1,0)]( `data/confronto_attacchi_110_v6.pdf `)
+- [Recall zero-day per categoria: Baseline vs NeSy v6 Completo (1,1,1)]( `data/confronto_attacchi2.pdf `)
+- [Analisi degli errori: conteggi Falsi Positivi (FP) e Falsi Negativi (FN)](d `ata/confronto_errori_fp_fn.pdf `)
+
 ### 🚀 Come provarlo
 Il progetto può essere eseguito localmente in un ambiente Python.
 
@@ -92,6 +112,26 @@ The repository currently includes:
 - Benchmarking tools for evaluation under zero-day rotation (configurations `v1`–`v4`, `v6`, `v5123`).
 - Tools for visualizing experimental results and generating thesis figures (`src/genera_grafici.py`, `src/genera_grafici_2.py`, `src/genera_grafici_tesi.py`).
 - Optimized dataset storage management through **Git LFS** for large `.csv` files.
+
+## Main Results (v5 vs v6 Comparison)
+
+The table below reports the **global macro-averages** computed across the four *zero-day* scenarios of the *Leave-One-Attack-Out* (LOAO) protocol under a unified evaluation cycle. The `(R1, R2, R3)` tuple indicates which logical constraints are active during training:
+- **R1 (`HighFrequencyFlood`):** detects traffic with a high packet transmission rate.
+- **R2 (`StrictMicroFlows`):** identifies short flows with a low packet count.
+- **R3:** session heuristic (`AsymmetricFlowRatio` in **v5**, replaced by `WebToolProxy` in **v6**).
+
+| Configuration | Mean Recall (%) ↑ | Mean F1-Score (%) ↑ | Mean FPR (%) ↓ |
+| :--- | :---: | :---: | :---: |
+| `v5 (1,1,0)` | 41.11 | 46.97 | 9.61 |
+| `v5 (1,1,1)` — *AsymmetricFlowRatio* | 41.21 | 45.08 | 14.80 |
+| `v6 (1,1,0)` | 39.14 | 44.24 | 10.45 |
+| **`v6 (1,1,1)` — *WebToolProxy*** | **46.04** | **50.74** | **11.96** |
+
+### Vector Plots (PDF)
+- [v6 Ablation Study: FPR/Recall trade-off and impact of R3](`data/tradeoff_fpr_recall2.pdf `)
+- [Zero-day Recall by attack category: Baseline vs NeSy v6 (1,1,0)](`data/confronto_attacchi_110_v6.pdf `)
+- [Zero-day Recall by attack category: Baseline vs Full NeSy v6 (1,1,1)](`data/confronto_attacchi2.pdf `)
+- [Error Analysis: False Positive (FP) and False Negative (FN) counts](`data/confronto_errori_fp_fn.pdf `)
 
 ### 🚀 How to try it
 
