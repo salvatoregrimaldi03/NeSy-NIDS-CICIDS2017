@@ -27,7 +27,7 @@ fpr_values = [overall_metrics[cfg]["FPR"] for cfg in configs]
 recall_values = [overall_metrics[cfg]["Recall"] for cfg in configs]
 
 # ==============================================================================
-# 2. GRAFICO FIGURA 4.2: Trade-off FPR vs Recall Globale (Macro-Medie v6)
+# 2. Trade-off FPR vs Recall Globale (Macro-Medie v6)
 # ==============================================================================
 plt.figure(figsize=(10.5, 6.2))
 plt.scatter(fpr_values, recall_values, color='steelblue', s=100, alpha=0.85, edgecolors='black', zorder=3)
