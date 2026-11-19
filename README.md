@@ -74,8 +74,7 @@ Il progetto può essere eseguito localmente in un ambiente Python.
    ```
 5. Installa le dipendenze necessarie:
    ```bash
-   pip install torch scikit-learn pandas numpy matplotlib
-   pip install https://github.com/logictensornetworks/LTNtorch/archive/refs/heads/main.zip
+   python -m pip install -r requirements.txt
    ```
 6. Esegui la pipeline principale di rilevazione delle intrusioni:
    ```bash
@@ -175,8 +174,7 @@ The project can be run locally in a Python environment.
 
 5. Install the required dependencies:
    ```bash
-   pip install torch scikit-learn pandas numpy matplotlib
-   pip install https://github.com/logictensornetworks/LTNtorch/archive/refs/heads/main.zip
+   python -m pip install -r requirements.txt
    ```
 
 6. Run the main intrusion detection pipeline:
