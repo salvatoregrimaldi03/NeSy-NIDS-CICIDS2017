@@ -38,10 +38,10 @@ La tabella riporta le **macro-medie globali** calcolate sui quattro scenari *zer
 | **`v6 (1,1,1)` — *WebToolProxy*** | **46,04** | **50,74** | **11,96** |
 
 ### Grafici Vettoriali (PDF)
-- [Studio di ablazione v6: trade-off FPR/Recall ed effetto di R3] (`data/tradeoff_fpr_recall2.pdf`)
-- [Recall zero-day per categoria: Baseline vs NeSy v6 (1,1,0)] (`data/confronto_attacchi_110_v6.pdf`)
-- [Recall zero-day per categoria: Baseline vs NeSy v6 Completo (1,1,1)] (`data/confronto_attacchi2.pdf`)
-- [Analisi degli errori: conteggi Falsi Positivi (FP) e Falsi Negativi (FN)] (`data/confronto_errori_fp_fn.pdf`)
+- [Studio di ablazione v6: trade-off FPR/Recall ed effetto di R3](`data/tradeoff_fpr_recall2.pdf`)
+- [Recall zero-day per categoria: Baseline vs NeSy v6 (1,1,0)](`data/confronto_attacchi_110_v6.pdf`)
+- [Recall zero-day per categoria: Baseline vs NeSy v6 Completo (1,1,1)](`data/confronto_attacchi2.pdf`)
+- [Analisi degli errori: conteggi Falsi Positivi (FP) e Falsi Negativi (FN)](`data/confronto_errori_fp_fn.pdf`)
 
 ### 🚀 Come provarlo
 Il progetto può essere eseguito localmente in un ambiente Python.
@@ -133,10 +133,10 @@ The table below reports the **global macro-averages** computed across the four *
 | **`v6 (1,1,1)` — *WebToolProxy*** | **46.04** | **50.74** | **11.96** |
 
 ### Vector Plots (PDF)
-- [v6 Ablation Study: FPR/Recall trade-off and impact of R3] (`data/tradeoff_fpr_recall2.pdf`)
-- [Zero-day Recall by attack category: Baseline vs NeSy v6 (1,1,0)] (`data/confronto_attacchi_110_v6.pdf`)
-- [Zero-day Recall by attack category: Baseline vs Full NeSy v6 (1,1,1)] (`data/confronto_attacchi2.pdf`)
-- [Error Analysis: False Positive (FP) and False Negative (FN) counts] (`data/confronto_errori_fp_fn.pdf`)
+- [v6 Ablation Study: FPR/Recall trade-off and impact of R3](`data/tradeoff_fpr_recall2.pdf`)
+- [Zero-day Recall by attack category: Baseline vs NeSy v6 (1,1,0)](`data/confronto_attacchi_110_v6.pdf`)
+- [Zero-day Recall by attack category: Baseline vs Full NeSy v6 (1,1,1)](`data/confronto_attacchi2.pdf`)
+- [Error Analysis: False Positive (FP) and False Negative (FN) counts](`data/confronto_errori_fp_fn.pdf`)
 
 ### 🚀 How to try it
 
