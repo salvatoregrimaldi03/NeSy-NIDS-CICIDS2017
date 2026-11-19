@@ -1,0 +1,11 @@
+# Core e deep learning
+torch
+LTNtorch @ https://github.com/logictensornetworks/LTNtorch/archive/refs/heads/main.zip
+
+# Elaborazione dei dati e metriche
+numpy
+pandas
+scikit-learn
+
+# Visualizzazione
+matplotlib
