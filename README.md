@@ -46,7 +46,7 @@ La tabella riporta le **macro-medie globali** calcolate sui quattro scenari *zer
 ### 🚀 Come provarlo
 Il progetto può essere eseguito localmente in un ambiente Python.
 
-> **Prerequisiti:** [Python 3.10+](https://www.python.org/) (testato su `3.10.12`) e [Git LFS](https://git-lfs.com/) installati sul sistema. Prima di scaricare i file CSV del dataset, assicurati di aver inizializzato Git LFS almeno una volta:
+> **Prerequisiti:** [Python 3.10+](https://www.python.org/) (testato su `3.14.2`) e [Git LFS](https://git-lfs.com/) installati sul sistema. Prima di scaricare i file CSV del dataset, assicurati di aver inizializzato Git LFS almeno una volta:
 > ```bash
 > git lfs install
 > ```
@@ -142,7 +142,7 @@ The table below reports the **global macro-averages** computed across the four *
 
 The project can be run locally in a Python environment.
 
-> **Prerequisites:** [Python 3.10+](https://www.python.org/) (tested on `3.10.12`) and [Git LFS](https://git-lfs.com/) installed on your system. Before downloading the dataset CSV files, make sure Git LFS is initialized:
+> **Prerequisites:** [Python 3.10+](https://www.python.org/) (tested on `3.14.2`) and [Git LFS](https://git-lfs.com/) installed on your system. Before downloading the dataset CSV files, make sure Git LFS is initialized:
 > ```bash
 > git lfs install
 > ```
